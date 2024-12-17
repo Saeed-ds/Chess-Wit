@@ -1,0 +1,443 @@
+﻿<Window x:Class="WpfApp1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="850" Width="1350">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="/dr2.jpg"/>
+        </Grid.Background>
+        <Grid x:Name="Grid_1" Width="450" HorizontalAlignment="Center" Height="800" Margin="850,0,0,0">
+            <Grid.Background>
+                <ImageBrush ImageSource="/pj1b.jpg"/>
+            </Grid.Background>
+            <Button x:Name="btne" Content="Exit" HorizontalAlignment="Center" Height="50" Margin="0,50,0,0" VerticalAlignment="Top" Width="150" FontSize="14" FontWeight="Bold" Click="btne_Click">
+                <Button.Background>
+                    <ImageBrush ImageSource="/pj1b2.jpg"/>
+                </Button.Background>
+            </Button>
+            <Button x:Name="btnback" Content="◀" HorizontalAlignment="Left" Height="50" Margin="0,0,0,0" VerticalAlignment="Top" Width="150" FontSize="14" FontWeight="Bold" Click="btnback_Click">
+                <Button.Background>
+                    <ImageBrush ImageSource="/pj1b2.jpg"/>
+                </Button.Background>
+            </Button>
+            <Button x:Name="btnforward" Content="▶" HorizontalAlignment="Left" Height="50" Margin="150,0,0,0" VerticalAlignment="Top" Width="150" FontSize="14" FontWeight="Bold" Click="btnforward_Click">
+                <Button.Background>
+                    <ImageBrush ImageSource="/pj1b2.jpg"/>
+                </Button.Background>
+            </Button>
+            <Button x:Name="btnsurrender1" Content="Surrender" HorizontalAlignment="Left" Height="50" Margin="262,0,0,0" VerticalAlignment="Center" Width="150" FontSize="14" FontWeight="Bold" Click="btnsurrender1_Click">
+                <Button.Background>
+                    <ImageBrush ImageSource="/pj1b2.jpg"/>
+                </Button.Background>
+            </Button>
+            <Button x:Name="btnsurrender2" Content="Surrender" HorizontalAlignment="Left" Height="50" Margin="265,725,0,0" VerticalAlignment="Top" Width="150" FontSize="14" FontWeight="Bold" Click="btnsurrender2_Click">
+                <Button.Background>
+                    <ImageBrush ImageSource="/pj1b2.jpg"/>
+                </Button.Background>
+            </Button>
+            <Button x:Name="btnpw" Content="" HorizontalAlignment="Left" Height="75" Margin="37,300,0,0" VerticalAlignment="Top" Width="75">
+                <Button.Background>
+                    <ImageBrush ImageSource="/Pawn_W.png"/>
+                </Button.Background>
+            </Button>
+            <Button x:Name="btnrw" Content="" HorizontalAlignment="Left" Height="75" Margin="112,300,0,0" VerticalAlignment="Top" Width="76" Click="btnrw_Click">
+                <Button.Background>
+                    <ImageBrush ImageSource="/Rook_W.png"/>
+                </Button.Background>
+            </Button>
+            <Button x:Name="btnkw" Content="" HorizontalAlignment="Center" Height="75" Margin="0,300,0,0" VerticalAlignment="Top" Width="75" Click="btnkw_Click">
+                <Button.Background>
+                    <ImageBrush ImageSource="/Knight_W.png"/>
+                </Button.Background>
+            </Button>
+            <Button x:Name="btnbw" Content="" HorizontalAlignment="Left" Height="75" Margin="262,300,0,0" VerticalAlignment="Top" Width="75" Click="btnbw_Click">
+                <Button.Background>
+                    <ImageBrush ImageSource="/Bishop_W.png"/>
+                </Button.Background>
+            </Button>
+            <Button x:Name="btnqw" Content="" HorizontalAlignment="Left" Height="75" Margin="337,300,0,0" VerticalAlignment="Top" Width="75" Click="btnqw_Click">
+                <Button.Background>
+                    <ImageBrush ImageSource="/Queen_W.png"/>
+                </Button.Background>
+            </Button>
+            <Button x:Name="btnpb" Content="" HorizontalAlignment="Left" Height="75" Margin="40,650,0,0" VerticalAlignment="Top" Width="75">
+                <Button.Background>
+                    <ImageBrush ImageSource="/Pawn_B.png"/>
+                </Button.Background>
+            </Button>
+            <Button x:Name="btnrb" Content="" HorizontalAlignment="Left" Height="75" Margin="115,650,0,0" VerticalAlignment="Top" Width="75" Click="btnrb_Click">
+                <Button.Background>
+                    <ImageBrush ImageSource="/Rook_B.png"/>
+                </Button.Background>
+            </Button>
+            <Button x:Name="btnkb" Content="" HorizontalAlignment="Left" Height="75" Margin="190,650,0,0" VerticalAlignment="Top" Width="75" Click="btnkb_Click">
+                <Button.Background>
+                    <ImageBrush ImageSource="/Knight_B.png"/>
+                </Button.Background>
+            </Button>
+            <Button x:Name="btnbb" Content="" HorizontalAlignment="Left" Height="75" Margin="265,650,0,0" VerticalAlignment="Top" Width="75" Click="btnbb_Click">
+                <Button.Background>
+                    <ImageBrush ImageSource="/Bishop_B.png"/>
+                </Button.Background>
+            </Button>
+            <Button x:Name="btnqb" Content="" HorizontalAlignment="Left" Height="75" Margin="340,650,0,0" VerticalAlignment="Top" Width="75" Click="btnqb_Click">
+                <Button.Background>
+                    <ImageBrush ImageSource="/Queen_B.png"/>
+                </Button.Background>
+            </Button>
+            <Button x:Name="btnrs" Content="Restart" HorizontalAlignment="Left" Height="50" Margin="300,50,0,0" VerticalAlignment="Top" Width="150" FontSize="14" FontWeight="Bold" Click="btns_Click">
+                <Button.Background>
+                    <ImageBrush ImageSource="/pj1b2.jpg"/>
+                </Button.Background>
+            </Button>
+            <Label x:Name="label6" Content="0" HorizontalAlignment="Left" Height="50" Margin="40,600,0,0" VerticalAlignment="Top" Width="75" FontWeight="Bold" FontSize="36" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+            <Label x:Name="label7" Content="0" HorizontalAlignment="Left" Height="50" Margin="115,600,0,0" VerticalAlignment="Top" Width="75" FontWeight="Bold" FontSize="36" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+            <Label x:Name="label8" Content="0" HorizontalAlignment="Left" Height="50" Margin="190,600,0,0" VerticalAlignment="Top" Width="75" FontWeight="Bold" FontSize="36" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+            <Label x:Name="label9" Content="0" HorizontalAlignment="Left" Height="50" Margin="265,600,0,0" VerticalAlignment="Top" Width="75" FontWeight="Bold" FontSize="36" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+            <Label x:Name="label10" Content="0" HorizontalAlignment="Left" Height="50" Margin="340,600,0,0" VerticalAlignment="Top" Width="75" FontWeight="Bold" FontSize="36" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+            <Label x:Name="label1" Content="0" HorizontalAlignment="Left" Height="50" Margin="37,250,0,0" VerticalAlignment="Top" Width="75" FontWeight="Bold" FontSize="36" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+            <Label x:Name="label2" Content="0" HorizontalAlignment="Left" Height="50" Margin="112,250,0,0" VerticalAlignment="Top" Width="75" FontWeight="Bold" FontSize="36" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+            <Label x:Name="label3" Content="0" HorizontalAlignment="Center" Height="50" Margin="0,250,0,0" VerticalAlignment="Top" Width="75" FontWeight="Bold" FontSize="36" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+            <Label x:Name="label4" Content="0" HorizontalAlignment="Left" Height="50" Margin="262,250,0,0" VerticalAlignment="Top" Width="75" FontWeight="Bold" FontSize="36" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+            <Label x:Name="label5" Content="0" HorizontalAlignment="Left" Height="50" Margin="337,250,0,0" VerticalAlignment="Top" Width="75" FontWeight="Bold" FontSize="36" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+            <Button x:Name="btnn2" Content="" HorizontalAlignment="Left" Height="50" Margin="352,550,0,0" VerticalAlignment="Top" Width="50" RenderTransformOrigin="0.536,0.535" Background="Red"/>
+            <Button x:Name="btnn1" Content="" HorizontalAlignment="Left" Height="50" Margin="350,200,0,0" VerticalAlignment="Top" Width="50" Background="Lime"/>
+            <Label Content="Player 1" HorizontalAlignment="Left" Height="51" Margin="0,100,0,0" VerticalAlignment="Top" Width="150" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontWeight="Bold" FontSize="24"/>
+            <Label Content="Player 2" HorizontalAlignment="Left" Height="51" Margin="0,428,0,0" VerticalAlignment="Top" Width="150" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontWeight="Bold" FontSize="24"/>
+            <Label x:Name="time1" Content="0" HorizontalAlignment="Left" Height="51" Margin="228,144,0,0" VerticalAlignment="Top" Width="150" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontWeight="Bold" FontSize="24"/>
+            <Label x:Name="time2" Content="0" HorizontalAlignment="Left" Height="51" Margin="228,499,0,0" VerticalAlignment="Top" Width="150" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontWeight="Bold" FontSize="24"/>
+            <Button Content="Start" HorizontalAlignment="Left" Height="50" Margin="300,0,0,0" VerticalAlignment="Top" Width="150" FontSize="14" FontWeight="Bold" Click="Button_Click">
+                <Button.Background>
+                    <ImageBrush ImageSource="/pj1b2.jpg"/>
+                </Button.Background>
+            </Button>
+            <Label x:Name="check1" Content="" HorizontalAlignment="Left" Height="51" Margin="37,151,0,0" VerticalAlignment="Top" Width="150" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontWeight="Bold" FontSize="24"/>
+            <Label x:Name="check2" Content="" HorizontalAlignment="Left" Height="51" Margin="0,484,0,0" VerticalAlignment="Top" Width="150" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontWeight="Bold" FontSize="24"/>
+            <Label x:Name="final" Content="" HorizontalAlignment="Left" Height="51" Margin="2,50,0,0" VerticalAlignment="Top" Width="150" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontWeight="Bold" FontSize="24"/>
+            <Label x:Name="mate1" Content="" HorizontalAlignment="Left" Height="51" Margin="0,377,0,0" VerticalAlignment="Top" Width="150" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontWeight="Bold" FontSize="24"/>
+            <Label x:Name="mate2" Content="" HorizontalAlignment="Left" Height="51" Margin="2,725,0,0" VerticalAlignment="Top" Width="150" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontWeight="Bold" FontSize="24"/>
+        </Grid>
+
+        <Grid x:Name="Grid_2" Height="800" Width="800" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="25,0,0,0">
+            <Grid.Background>
+                <ImageBrush ImageSource="/chessboard.png"/>
+            </Grid.Background>
+            <Button x:Name="btn1" Content="" HorizontalAlignment="Left" Height="100" Margin="700,700,0,0" VerticalAlignment="Top" Width="100" Click="btn1_Click">
+                <Button.Background>
+                    <ImageBrush ImageSource="/Rook_W.png"/>
+                </Button.Background>
+            </Button>
+            <Button x:Name="btn2" Content="" HorizontalAlignment="Left" Height="100" Margin="600,700,0,0" VerticalAlignment="Top" Width="100" Click="btn2_Click">
+                <Button.Background>
+                    <ImageBrush ImageSource="/Knight_W.png"/>
+                </Button.Background>
+            </Button>
+            <Button x:Name="btn3" Content="" HorizontalAlignment="Left" Height="100" Margin="500,700,0,0" VerticalAlignment="Top" Width="100" Click="btn3_Click">
+                <Button.Background>
+                    <ImageBrush ImageSource="/Bishop_W.png"/>
+                </Button.Background>
+            </Button>
+            <Button x:Name="btn4" Content="" HorizontalAlignment="Left" Height="100" Margin="400,700,0,0" VerticalAlignment="Top" Width="100" Click="btn4_Click">
+                <Button.Background>
+                    <ImageBrush ImageSource="/King_W.png"/>
+                </Button.Background>
+            </Button>
+            <Button x:Name="btn5" Content="" HorizontalAlignment="Left" Height="100" Margin="300,700,0,0" VerticalAlignment="Top" Width="100" Click="btn5_Click">
+                <Button.Background>
+                    <ImageBrush ImageSource="/Queen_W.png"/>
+                </Button.Background>
+            </Button>
+            <Button x:Name="btn6" Content="" HorizontalAlignment="Left" Height="100" Margin="200,700,0,0" VerticalAlignment="Top" Width="100" Click="btn6_Click">
+                <Button.Background>
+                    <ImageBrush ImageSource="/Bishop_W.png"/>
+                </Button.Background>
+            </Button>
+            <Button x:Name="btn7" Content="" HorizontalAlignment="Left" Height="100" Margin="100,700,0,0" VerticalAlignment="Top" Width="100" Click="btn7_Click">
+                <Button.Background>
+                    <ImageBrush ImageSource="/Knight_W.png"/>
+                </Button.Background>
+            </Button>
+            <Button x:Name="btn8" Content="" HorizontalAlignment="Left" Height="100" Margin="0,700,0,0" VerticalAlignment="Top" Width="100" Click="btn8_Click">
+                <Button.Background>
+                    <ImageBrush ImageSource="/Rook_W.png"/>
+                </Button.Background>
+            </Button>
+            <Button x:Name="btn9" Content="" HorizontalAlignment="Left" Height="100" Margin="700,600,0,0" VerticalAlignment="Top" Width="100" Click="btn9_Click">
+                <Button.Background>
+                    <ImageBrush ImageSource="/Pawn_W.png"/>
+                </Button.Background>
+            </Button>
+            <Button x:Name="btn10" Content="" HorizontalAlignment="Left" Height="100" Margin="600,600,0,0" VerticalAlignment="Top" Width="100" Click="btn10_Click">
+                <Button.Background>
+                    <ImageBrush ImageSource="/Pawn_W.png"/>
+                </Button.Background>
+            </Button>
+            <Button x:Name="btn11" Content="" HorizontalAlignment="Left" Height="100" Margin="500,600,0,0" VerticalAlignment="Top" Width="100" Click="btn11_Click">
+                <Button.Background>
+                    <ImageBrush ImageSource="/Pawn_W.png"/>
+                </Button.Background>
+            </Button>
+            <Button x:Name="btn12" Content="" HorizontalAlignment="Left" Height="100" Margin="400,600,0,0" VerticalAlignment="Top" Width="100" Click="btn12_Click">
+                <Button.Background>
+                    <ImageBrush ImageSource="/Pawn_W.png"/>
+                </Button.Background>
+            </Button>
+            <Button x:Name="btn13" Content="" HorizontalAlignment="Left" Height="100" Margin="300,600,0,0" VerticalAlignment="Top" Width="100" Click="btn13_Click">
+                <Button.Background>
+                    <ImageBrush ImageSource="/Pawn_W.png"/>
+                </Button.Background>
+            </Button>
+            <Button x:Name="btn14" Content="" HorizontalAlignment="Left" Height="100" Margin="200,600,0,0" VerticalAlignment="Top" Width="100" Click="btn14_Click">
+                <Button.Background>
+                    <ImageBrush ImageSource="/Pawn_W.png"/>
+                </Button.Background>
+            </Button>
+            <Button x:Name="btn15" Content="" HorizontalAlignment="Left" Height="100" Margin="100,600,0,0" VerticalAlignment="Top" Width="100" Click="btn15_Click">
+                <Button.Background>
+                    <ImageBrush ImageSource="/Pawn_W.png"/>
+                </Button.Background>
+            </Button>
+            <Button x:Name="btn16" Content="" HorizontalAlignment="Left" Height="100" Margin="0,600,0,0" VerticalAlignment="Top" Width="100" Click="btn16_Click">
+                <Button.Background>
+                    <ImageBrush ImageSource="/Pawn_W.png"/>
+                </Button.Background>
+            </Button>
+            <Button x:Name="btn17" Content="" HorizontalAlignment="Left" Height="100" Margin="700,500,0,0" VerticalAlignment="Top" Width="100" Click="btn17_Click">
+                <Button.Background>
+                    <ImageBrush/>
+                </Button.Background>
+            </Button>
+            <Button x:Name="btn18" Content="" HorizontalAlignment="Left" Height="100" Margin="600,500,0,0" VerticalAlignment="Top" Width="100" Click="btn18_Click">
+                <Button.Background>
+                    <ImageBrush/>
+                </Button.Background>
+            </Button>
+            <Button x:Name="btn19" Content="" HorizontalAlignment="Left" Height="100" Margin="500,500,0,0" VerticalAlignment="Top" Width="100" Click="btn19_Click">
+                <Button.Background>
+                    <ImageBrush/>
+                </Button.Background>
+            </Button>
+            <Button x:Name="btn20" Content="" HorizontalAlignment="Left" Height="100" Margin="400,500,0,0" VerticalAlignment="Top" Width="100" Click="btn20_Click" Background="{x:Null}" FontWeight="Bold" FontSize="16"/>
+            <Button x:Name="btn21" Content="" HorizontalAlignment="Left" Height="100" Margin="300,500,0,0" VerticalAlignment="Top" Width="100" Click="btn21_Click">
+                <Button.Background>
+                    <ImageBrush/>
+                </Button.Background>
+            </Button>
+            <Button x:Name="btn22" Content="" HorizontalAlignment="Left" Height="100" Margin="200,500,0,0" VerticalAlignment="Top" Width="100" Click="btn22_Click">
+                <Button.Background>
+                    <ImageBrush/>
+                </Button.Background>
+            </Button>
+            <Button x:Name="btn23" Content="" HorizontalAlignment="Left" Height="100" Margin="100,500,0,0" VerticalAlignment="Top" Width="100" Click="btn23_Click">
+                <Button.Background>
+                    <ImageBrush/>
+                </Button.Background>
+            </Button>
+            <Button x:Name="btn24" Content="" HorizontalAlignment="Left" Height="100" Margin="0,500,0,0" VerticalAlignment="Top" Width="100" Click="btn24_Click">
+                <Button.Background>
+                    <ImageBrush/>
+                </Button.Background>
+            </Button>
+            <Button x:Name="btn25" Content="" HorizontalAlignment="Left" Height="100" Margin="700,400,0,0" VerticalAlignment="Top" Width="100" Click="btn25_Click">
+                <Button.Background>
+                    <ImageBrush/>
+                </Button.Background>
+            </Button>
+            <Button x:Name="btn26" Content="" HorizontalAlignment="Left" Height="100" Margin="600,400,0,0" VerticalAlignment="Top" Width="100" Click="btn26_Click">
+                <Button.Background>
+                    <ImageBrush/>
+                </Button.Background>
+            </Button>
+            <Button x:Name="btn27" Content="" HorizontalAlignment="Left" Height="100" Margin="500,400,0,0" VerticalAlignment="Top" Width="100" Click="btn27_Click">
+                <Button.Background>
+                    <ImageBrush/>
+                </Button.Background>
+            </Button>
+            <Button x:Name="btn28" Content="" HorizontalAlignment="Left" Height="100" Margin="400,400,0,0" VerticalAlignment="Top" Width="100" Click="btn28_Click" Background="{x:Null}"/>
+            <Button x:Name="btn29" Content="" HorizontalAlignment="Left" Height="100" Margin="300,400,0,0" VerticalAlignment="Top" Width="100" Click="btn29_Click">
+                <Button.Background>
+                    <ImageBrush/>
+                </Button.Background>
+            </Button>
+            <Button x:Name="btn30" Content="" HorizontalAlignment="Left" Height="100" Margin="200,400,0,0" VerticalAlignment="Top" Width="100" Click="btn30_Click">
+                <Button.Background>
+                    <ImageBrush/>
+                </Button.Background>
+            </Button>
+            <Button x:Name="btn31" Content="" HorizontalAlignment="Left" Height="100" Margin="100,400,0,0" VerticalAlignment="Top" Width="100" Click="btn31_Click">
+                <Button.Background>
+                    <ImageBrush/>
+                </Button.Background>
+            </Button>
+            <Button x:Name="btn32" Content="" HorizontalAlignment="Left" Height="100" Margin="0,400,0,0" VerticalAlignment="Top" Width="100" Click="btn32_Click">
+                <Button.Background>
+                    <ImageBrush/>
+                </Button.Background>
+            </Button>
+            <Button x:Name="btn33" Content="" HorizontalAlignment="Left" Height="100" Margin="700,300,0,0" VerticalAlignment="Top" Width="100" Click="btn33_Click">
+                <Button.Background>
+                    <ImageBrush/>
+                </Button.Background>
+            </Button>
+            <Button x:Name="btn34" Content="" HorizontalAlignment="Left" Height="100" Margin="600,300,0,0" VerticalAlignment="Top" Width="100" Click="btn34_Click">
+                <Button.Background>
+                    <ImageBrush/>
+                </Button.Background>
+            </Button>
+            <Button x:Name="btn35" Content="" HorizontalAlignment="Left" Height="100" Margin="500,300,0,0" VerticalAlignment="Top" Width="100" Click="btn35_Click">
+                <Button.Background>
+                    <ImageBrush/>
+                </Button.Background>
+            </Button>
+            <Button x:Name="btn36" Content="" HorizontalAlignment="Left" Height="100" Margin="400,300,0,0" VerticalAlignment="Top" Width="100" Click="btn36_Click">
+                <Button.Background>
+                    <ImageBrush/>
+                </Button.Background>
+            </Button>
+            <Button x:Name="btn37" Content="" HorizontalAlignment="Left" Height="100" Margin="300,300,0,0" VerticalAlignment="Top" Width="100" Click="btn37_Click">
+                <Button.Background>
+                    <ImageBrush/>
+                </Button.Background>
+            </Button>
+            <Button x:Name="btn38" Content="" HorizontalAlignment="Left" Height="100" Margin="200,300,0,0" VerticalAlignment="Top" Width="100" Click="btn38_Click">
+                <Button.Background>
+                    <ImageBrush/>
+                </Button.Background>
+            </Button>
+            <Button x:Name="btn39" Content="" HorizontalAlignment="Left" Height="100" Margin="100,300,0,0" VerticalAlignment="Top" Width="100" Click="btn39_Click">
+                <Button.Background>
+                    <ImageBrush/>
+                </Button.Background>
+            </Button>
+            <Button x:Name="btn40" Content="" HorizontalAlignment="Left" Height="100" Margin="0,300,0,0" VerticalAlignment="Top" Width="100" Click="btn40_Click">
+                <Button.Background>
+                    <ImageBrush/>
+                </Button.Background>
+            </Button>
+            <Button x:Name="btn41" Content="" HorizontalAlignment="Left" Height="100" Margin="700,200,0,0" VerticalAlignment="Top" Width="100" Click="btn41_Click">
+                <Button.Background>
+                    <ImageBrush/>
+                </Button.Background>
+            </Button>
+            <Button x:Name="btn42" Content="" HorizontalAlignment="Left" Height="100" Margin="600,200,0,0" VerticalAlignment="Top" Width="100" Click="btn42_Click">
+                <Button.Background>
+                    <ImageBrush/>
+                </Button.Background>
+            </Button>
+            <Button x:Name="btn43" Content="" HorizontalAlignment="Left" Height="100" Margin="500,200,0,0" VerticalAlignment="Top" Width="100" Click="btn43_Click">
+                <Button.Background>
+                    <ImageBrush/>
+                </Button.Background>
+            </Button>
+            <Button x:Name="btn44" Content="" HorizontalAlignment="Left" Height="100" Margin="400,200,0,0" VerticalAlignment="Top" Width="100" Click="btn44_Click">
+                <Button.Background>
+                    <ImageBrush/>
+                </Button.Background>
+            </Button>
+            <Button x:Name="btn45" Content="" HorizontalAlignment="Left" Height="100" Margin="300,200,0,0" VerticalAlignment="Top" Width="100" Click="btn45_Click">
+                <Button.Background>
+                    <ImageBrush/>
+                </Button.Background>
+            </Button>
+            <Button x:Name="btn46" Content="" HorizontalAlignment="Left" Height="100" Margin="200,200,0,0" VerticalAlignment="Top" Width="100" Click="btn46_Click">
+                <Button.Background>
+                    <ImageBrush/>
+                </Button.Background>
+            </Button>
+            <Button x:Name="btn47" Content="" HorizontalAlignment="Left" Height="100" Margin="100,200,0,0" VerticalAlignment="Top" Width="100" Click="btn47_Click">
+                <Button.Background>
+                    <ImageBrush/>
+                </Button.Background>
+            </Button>
+            <Button x:Name="btn48" Content="" HorizontalAlignment="Left" Height="100" Margin="0,200,0,0" VerticalAlignment="Top" Width="100" Click="btn48_Click">
+                <Button.Background>
+                    <ImageBrush/>
+                </Button.Background>
+            </Button>
+            <Button x:Name="btn49" Content="" HorizontalAlignment="Left" Height="100" Margin="700,100,0,0" VerticalAlignment="Top" Width="100" Click="btn49_Click">
+                <Button.Background>
+                    <ImageBrush ImageSource="/Pawn_B.png"/>
+                </Button.Background>
+            </Button>
+            <Button x:Name="btn50" Content="" HorizontalAlignment="Left" Height="100" Margin="600,100,0,0" VerticalAlignment="Top" Width="100" Click="btn50_Click">
+                <Button.Background>
+                    <ImageBrush ImageSource="Pawn_B.png"/>
+                </Button.Background>
+            </Button>
+            <Button x:Name="btn51" Content="" HorizontalAlignment="Left" Height="100" Margin="500,100,0,0" VerticalAlignment="Top" Width="100" Click="btn51_Click">
+                <Button.Background>
+                    <ImageBrush ImageSource="Pawn_B.png"/>
+                </Button.Background>
+            </Button>
+            <Button x:Name="btn52" Content="" HorizontalAlignment="Left" Height="100" Margin="400,100,0,0" VerticalAlignment="Top" Width="100" Click="btn52_Click">
+                <Button.Background>
+                    <ImageBrush ImageSource="Pawn_B.png"/>
+                </Button.Background>
+            </Button>
+            <Button x:Name="btn53" Content="" HorizontalAlignment="Left" Height="100" Margin="300,100,0,0" VerticalAlignment="Top" Width="100" Click="btn53_Click">
+                <Button.Background>
+                    <ImageBrush ImageSource="Pawn_B.png"/>
+                </Button.Background>
+            </Button>
+            <Button x:Name="btn54" Content="" HorizontalAlignment="Left" Height="100" Margin="200,100,0,0" VerticalAlignment="Top" Width="100" Click="btn54_Click">
+                <Button.Background>
+                    <ImageBrush ImageSource="Pawn_B.png"/>
+                </Button.Background>
+            </Button>
+            <Button x:Name="btn55" Content="" HorizontalAlignment="Left" Height="100" Margin="100,100,0,0" VerticalAlignment="Top" Width="100" Click="btn55_Click">
+                <Button.Background>
+                    <ImageBrush ImageSource="Pawn_B.png"/>
+                </Button.Background>
+            </Button>
+            <Button x:Name="btn56" Content="" HorizontalAlignment="Left" Height="100" Margin="0,100,0,0" VerticalAlignment="Top" Width="100" Click="btn56_Click">
+                <Button.Background>
+                    <ImageBrush ImageSource="Pawn_B.png"/>
+                </Button.Background>
+            </Button>
+            <Button x:Name="btn57" Content="" HorizontalAlignment="Left" Height="100" Margin="700,0,0,0" VerticalAlignment="Top" Width="100" Click="btn57_Click">
+                <Button.Background>
+                    <ImageBrush ImageSource="/Rook_B.png"/>
+                </Button.Background>
+            </Button>
+            <Button x:Name="btn58" Content="" HorizontalAlignment="Left" Height="100" Margin="600,0,0,0" VerticalAlignment="Top" Width="100" Click="btn58_Click">
+                <Button.Background>
+                    <ImageBrush ImageSource="/Knight_B.png"/>
+                </Button.Background>
+            </Button>
+            <Button x:Name="btn59" Content="" HorizontalAlignment="Left" Height="100" Margin="500,0,0,0" VerticalAlignment="Top" Width="100" Click="btn59_Click">
+                <Button.Background>
+                    <ImageBrush ImageSource="/Bishop_B.png"/>
+                </Button.Background>
+            </Button>
+            <Button x:Name="btn60" Content="" HorizontalAlignment="Left" Height="100" Margin="400,0,0,0" VerticalAlignment="Top" Width="100" Click="btn60_Click">
+                <Button.Background>
+                    <ImageBrush ImageSource="/King_B.png"/>
+                </Button.Background>
+            </Button>
+            <Button x:Name="btn61" Content="" HorizontalAlignment="Left" Height="100" Margin="300,0,0,0" VerticalAlignment="Top" Width="100" Click="btn61_Click">
+                <Button.Background>
+                    <ImageBrush ImageSource="/Queen_B.png"/>
+                </Button.Background>
+            </Button>
+            <Button x:Name="btn62" Content="" HorizontalAlignment="Left" Height="100" Margin="200,0,0,0" VerticalAlignment="Top" Width="100" Click="btn62_Click">
+                <Button.Background>
+                    <ImageBrush ImageSource="/Bishop_B.png"/>
+                </Button.Background>
+            </Button>
+            <Button x:Name="btn63" Content="" HorizontalAlignment="Left" Height="100" Margin="100,0,0,0" VerticalAlignment="Top" Width="100" Click="btn63_Click">
+                <Button.Background>
+                    <ImageBrush ImageSource="/Knight_B.png"/>
+                </Button.Background>
+            </Button>
+            <Button x:Name="btn64" Content="" HorizontalAlignment="Left" Height="100" Margin="0,0,0,0" VerticalAlignment="Top" Width="100" Click="btn64_Click">
+                <Button.Background>
+                    <ImageBrush ImageSource="/Rook_B.png"/>
+                </Button.Background>
+            </Button>
+        </Grid>
+    </Grid>
+</Window>

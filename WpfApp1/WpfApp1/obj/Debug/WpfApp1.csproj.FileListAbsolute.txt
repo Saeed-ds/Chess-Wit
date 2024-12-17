@@ -1,0 +1,35 @@
+C:\Users\saeed\Desktop\app c\WpfApp1\WpfApp1\obj\Debug\WpfApp1.csproj.AssemblyReference.cache
+C:\Users\saeed\Desktop\app c\WpfApp1\WpfApp1\obj\Debug\MainWindow.g.cs
+C:\Users\saeed\Desktop\app c\WpfApp1\WpfApp1\obj\Debug\Page1.g.cs
+C:\Users\saeed\Desktop\app c\WpfApp1\WpfApp1\obj\Debug\App.g.cs
+C:\Users\saeed\Desktop\app c\WpfApp1\WpfApp1\obj\Debug\WpfApp1_MarkupCompile.cache
+C:\Users\saeed\Desktop\app c\WpfApp1\WpfApp1\obj\Debug\WpfApp1_MarkupCompile.lref
+C:\Users\saeed\Desktop\app c\WpfApp1\WpfApp1\bin\Debug\WpfApp1.exe.config
+C:\Users\saeed\Desktop\app c\WpfApp1\WpfApp1\bin\Debug\WpfApp1.exe
+C:\Users\saeed\Desktop\app c\WpfApp1\WpfApp1\bin\Debug\WpfApp1.pdb
+C:\Users\saeed\Desktop\app c\WpfApp1\WpfApp1\obj\Debug\MainWindow.baml
+C:\Users\saeed\Desktop\app c\WpfApp1\WpfApp1\obj\Debug\Page1.baml
+C:\Users\saeed\Desktop\app c\WpfApp1\WpfApp1\obj\Debug\WpfApp1.g.resources
+C:\Users\saeed\Desktop\app c\WpfApp1\WpfApp1\obj\Debug\WpfApp1.Properties.Resources.resources
+C:\Users\saeed\Desktop\app c\WpfApp1\WpfApp1\obj\Debug\WpfApp1.csproj.GenerateResource.cache
+C:\Users\saeed\Desktop\app c\WpfApp1\WpfApp1\obj\Debug\WpfApp1.csproj.CoreCompileInputs.cache
+C:\Users\saeed\Desktop\app c\WpfApp1\WpfApp1\obj\Debug\WpfApp1.exe
+C:\Users\saeed\Desktop\app c\WpfApp1\WpfApp1\obj\Debug\WpfApp1.pdb
+C:\Users\saeed\Desktop\appc\WpfApp1\WpfApp1\bin\Debug\WpfApp1.exe.config
+C:\Users\saeed\Desktop\appc\WpfApp1\WpfApp1\bin\Debug\WpfApp1.exe
+C:\Users\saeed\Desktop\appc\WpfApp1\WpfApp1\bin\Debug\WpfApp1.pdb
+C:\Users\saeed\Desktop\appc\WpfApp1\WpfApp1\bin\Debug\Bogus.dll
+C:\Users\saeed\Desktop\appc\WpfApp1\WpfApp1\bin\Debug\Bogus.xml
+C:\Users\saeed\Desktop\appc\WpfApp1\WpfApp1\obj\Debug\WpfApp1.csproj.AssemblyReference.cache
+C:\Users\saeed\Desktop\appc\WpfApp1\WpfApp1\obj\Debug\MainWindow.g.cs
+C:\Users\saeed\Desktop\appc\WpfApp1\WpfApp1\obj\Debug\App.g.cs
+C:\Users\saeed\Desktop\appc\WpfApp1\WpfApp1\obj\Debug\WpfApp1_MarkupCompile.cache
+C:\Users\saeed\Desktop\appc\WpfApp1\WpfApp1\obj\Debug\WpfApp1_MarkupCompile.lref
+C:\Users\saeed\Desktop\appc\WpfApp1\WpfApp1\obj\Debug\MainWindow.baml
+C:\Users\saeed\Desktop\appc\WpfApp1\WpfApp1\obj\Debug\WpfApp1.g.resources
+C:\Users\saeed\Desktop\appc\WpfApp1\WpfApp1\obj\Debug\WpfApp1.Properties.Resources.resources
+C:\Users\saeed\Desktop\appc\WpfApp1\WpfApp1\obj\Debug\WpfApp1.csproj.GenerateResource.cache
+C:\Users\saeed\Desktop\appc\WpfApp1\WpfApp1\obj\Debug\WpfApp1.csproj.CoreCompileInputs.cache
+C:\Users\saeed\Desktop\appc\WpfApp1\WpfApp1\obj\Debug\WpfApp1.csproj.Up2Date
+C:\Users\saeed\Desktop\appc\WpfApp1\WpfApp1\obj\Debug\WpfApp1.exe
+C:\Users\saeed\Desktop\appc\WpfApp1\WpfApp1\obj\Debug\WpfApp1.pdb
